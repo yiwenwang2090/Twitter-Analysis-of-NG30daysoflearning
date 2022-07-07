@@ -1,18 +1,31 @@
 # Introduction
-Story telling with PowerBi by [Paul](https://twitter.com/PauloDaguvnor?s=20&t=vZLxXH6n6up00sT6dPJaLw) was taught in Day 15 and 16 of the NG30daysoflearning.
+Story telling with PowerBi by [Paul](https://twitter.com/PauloDaguvnor?s=20&t=vZLxXH6n6up00sT6dPJaLw) was taught Day 15 and 16 of the NG30daysoflearning.
 This is to show what I learnt in this class
 
 # Problem Statement
-@theoyinbooke made an announcement on [twitter](https://twitter.com/TheOyinbooke/status/1523694387770789888?s=20&t=vZLxXH6n6up00sT6dPJaLw) May 9, 2022 about the NG30daysoflearning. From then till now there has been series of engagemnts with the hashtag on twitter with participants showcasing what they have learnt and many more
+Theoyinbooke and friends organised a training they tagged [#NG30daysoflearning](https://twitter.com/TheOyinbooke/status/1523694387770789888?s=20&t=vZLxXH6n6up00sT6dPJaLw) their motive was to help the Nigerian students currently affected by the ongoing ASUU strike gain technical skills in Data Analytics. Towards the end of the programme, Theoyinbooke reached out to me and said he wants to know if the training was sucessful or not, and if it will be adviseable to hold more trainings like that in the future.
 
-With everything I have learnt in this training, I want to show an analysis of the engagement of the hashtag which will be useful to the organisers and other interested parties
+After taking a look at the [dataset](https://aka.ms/30DLDATGitHubRepo) made available. One question i want to answer is "How successful was the programme and how can it be improved?"
 
-After taking a look at the [dataset](https://aka.ms/30DLDATGitHubRepo) made available. I decided to ask this questions
-1. What day of the week were participants most active?
-2. What time of the day were participants most active?
-3. Who are the most active participants?
-4. What were the top most liked and retweeted post?
-5. What were the top locations of our participants?
+# Data Sourcing
+[Data](https://github.com/theoyinbooke/30Days-of-Learning-Data-Analysis-Using-Power-BI-for-Students/tree/main/Twitter%20Data%20Web%20Scrape) was provided in two forms
+- [Jupyter notebook python file](https://github.com/theoyinbooke/30Days-of-Learning-Data-Analysis-Using-Power-BI-for-Students/blob/main/Twitter%20Data%20Web%20Scrape/30DLTweetsScrape.ipynb) 
+- [csv file](https://github.com/theoyinbooke/30Days-of-Learning-Data-Analysis-Using-Power-BI-for-Students/blob/main/Twitter%20Data%20Web%20Scrape/30DLTweets.csv)
+
+I made use of the cvs format and extracted the data from the web into PowerBi
+
+# Data Transformation
+Data cleaning was performed in Power Qwery,
+- There was a column from the raw data that contained both data and time, this was split into 2 seperate columns
+- Date column was transformed into day name,and the first 3 letters was extracted after which it was sorted by Day Number
+- Time column was transformed into start hours 
+- Data types were checked to see they were accurate
+- Locations column had 71% validity, due to the limitations of the data gotten
+
+# Data Visualization
+[Interact with dashboard here]()
+
+#
 
 # My Thought Process
 I am sure you will be wondering why this questions, what insight do you want to show, what do you want to call our attention to and many more. This is what i was thinking while asking this question,
@@ -26,4 +39,6 @@ I am sure you will be wondering why this questions, what insight do you want to 
 - To know if there is a pattern among the top posts the organisers should take note of, they can use this to make an informed decision what type of post they will be putting out
 ### what were the top locations of our participants?
 - I asked this just incase the organisers wants to have a data hang out or create a physcial hub.
+
+
 
